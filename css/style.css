@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+  font-size: 62.5%; /* 1rem = 10px */
+  margin: 0 auto; /* ページを中央揃えにするときに指定します */
+  padding-left: 1.6rem; /* ページの左側の余白を指定します */
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif; /* フォントを指定します */
+  font-weight: 700; /* フォントの太さを指定します */
+  line-height: 1.75; /* 行間を指定します */
+  color: #333; /* テキストの色を指定します */
+  background-color: #fff; /* 背景色を指定します */
+}
+
+a {
+  color: #333; /* リンクの色を指定します */
+  text-decoration: none; /* リンクの下線を表示しないときに指定します */
+}
+
+a:hover {
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none; /* リスト先頭の記号を表示しないときに指定します */
+}
+
+/* 部品
+------------------------------------------ */
+
+/* ヘッダー */
+.header {
+  position: fixed; /* 固定表示にするときに指定します */
+  top: 0; /* 上からの位置を指定します */
+  right: 0; /* 右からの位置を指定します */
+  left: 0; /* 左からの位置を指定します */
+  z-index: 1; /* 要素の重なり順を指定します */
+  display: flex; /* 複数の要素を横並びにするときに指定します */
+  justify-content: space-between; /* 要素を均等に配置するときに指定します */
+  background-color: #fff; /* 背景色を指定します */
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1); /* 影を指定します */
+}
+
+/* ロゴ */
+.header-logo {
+  display: flex; /* 複数の要素を横並びにするときに指定します */
+  align-items: center; /* 要素を中央揃えにするときに指定します */
+  justify-content: center; /* 要素を中央揃えにするときに指定します */
+  padding: 0 1.6rem; /* 要素の内側の余白を指定します */
+}
+
+.header-logo img {
+  height: 2rem;
+  vertical-align: baseline;
+}
+
+/* ハンバーガーボタン */
+.hamburger-button {
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #005BAC;
+}
+
+
+/* カバー */
+.cover {
+  background-image: url(../images/cover.png);
+  background-position: left center;
+  height: 25rem;
+  margin-top: 7rem;
+  max-width: 100%;
+}
+
+.cover-side-top {
+  display: flex;
+  padding-top: 3.4rem;
+  width: 50%;
+}
+
+.cover-side-top-text {
+  font-size: 1.1rem;
+  align-self: stretch;
+
+}
+
+.cover-side-top-number {
+  font-family: 'poppins', ExtraBold-Italic;
+  font-style: italic;
+  color: #F11F8D;
+  font-size: 2.5rem;
+}
+
+.cover-side-top-number:last-of-type {
+  font-size: 3.6rem;
+}
+
+.cover-bottom {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.07rem;
+}
+
+.cover-bottom-text {
+  font-size: 1.4rem;
+  flex-direction: column;
+}
+
+.cover-bottom-text:last-of-type {
+  font-size: 2.5rem;
+  color: #005BAC;
+}
